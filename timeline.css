@@ -1,0 +1,24 @@
+.border-timeline{
+    left:4%;
+    }
+    @media screen and (min-width: 450px) and (max-width: 767px) {
+    .border-timeline{
+        left:3%;
+    }
+    }
+    .left-line {
+        border: 1px solid #54565a;
+        width: 30px;
+        height: 0;
+        align-self: center;
+    }
+    .timeline:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 3px;
+        margin-left: -1.5px;
+        background-color: #e9ecef;
+    }
