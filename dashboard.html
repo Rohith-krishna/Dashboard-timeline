@@ -19,7 +19,7 @@
         </div>
         <div>
             <div class="flex gap-7 chat-rooms">
-                <div class="text-gray-400 self-center actions" id="actions" onclick="menusToggle();">
+                <div class="text-gray-400 self-center actions" onclick="menusToggle();">
                     <img class="cursor-pointer" src="https://icones.pro/wp-content/uploads/2021/04/icone-cloche-notification-grise.png" alt="" style="height: 30px;">
                     <div class="self-center actions">
                         <div class="menus">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="self-center action">
-                    <div class="profile rounded-full self-center" id="action" onclick="menuToggle();">
+                    <div class="profile rounded-full self-center" onclick="menuToggle();">
                         <img src="https://icon-library.com/images/person-icon-png-transparent/person-icon-png-transparent-7.jpg" alt="">
                     </div>
                     <div class="menu active:top-28">
@@ -75,19 +75,6 @@
                 const toggleMenu = document.querySelector('.menus');
                 toggleMenu.classList.toggle('active')
             }
-            const room  = document.querySelector('.chat-rooms');
-            const btns = document.querySelectorAll('.action'); 
-
-            room.addEventListener('click', e => {
-
-            btns.forEach(btn => {
-
-                if(btn.getAttribute('id') === e.target.getAttribute('id'))
-                btn.classList.add('active');
-                else
-                btn.classList.remove('active');
-                });
-            });
         </script>
     </nav>
     <section>
