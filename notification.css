@@ -1,0 +1,76 @@
+.actions{
+    right: 30px;
+    top:20px
+}
+.actions .profiles{
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+}
+.actions .profiles i{
+    height: 100%;
+}
+.actions .menus{
+    background-color:#FFF;
+    box-sizing:0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 20px;
+    width: 250px;
+    transition: 0.5s;
+    top: 120px;
+    visibility: hidden;
+    opacity: 0;
+}
+.actions .menus.active{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+.actions .menus::before{
+    background-color:#fff;
+    content: '';
+    height: 20px;
+    transform:rotate(45deg);
+    top:-5px;
+    width: 20px;
+}
+.actions .menus h3{
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3em;
+    padding: 20px 0px;
+    text-align: left;
+    width: 100%;
+}
+.actions .menus h3 div{
+    color: #818181;
+    font-size: 14px;
+    font-weight: 400;
+}
+.actions .menus ul li{
+    align-items: center;
+    justify-content: left;
+    list-style: none;
+    padding: 10px 0px;
+}
+.actions .menus ul li a{
+    display: inline-block;
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.actions .menus ul li:hover i{
+    opacity: 1;
+}
+.actions .menus ul li:hover a{
+    color:#036580;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body style="background-color: #2e3d49;">
+    <nav class="flex justify-between sticky top-0 items-center bg-white px-3 py-1 flex-wrap blog-nav z-10" data-controller="custom">
+        <div>
+            <a href="/" class="mr-4 inline-flex items-center">
+                <img class="logo-width w-56" src="https://www.odinschool.com/packs/media/images/static/logo-e1acf8c74169b7fab72c2a772738c72c.svg">
+            </a>
+        </div>
+        <div>
+            <div class="flex gap-10">
+                <div class="text-gray-400 self-center"  onclick="menuToggle();">
+                    <img src="https://icones.pro/wp-content/uploads/2021/04/icone-cloche-notification-grise.png" width="40" height="40">
+                    <div class="self-center actions">
+                        <div class="menus">
+                            <ul>
+                                <li>
+                                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    <a href="#">notification 1</a>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-user"></i></span>
+                                    <a href="#">notification 1</a>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-user"></i></span>
+                                    <a href="#">notification 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-center action">
+                    <div class="profile">
+                        <img src="https://icon-library.com/images/person-icon-png-transparent/person-icon-png-transparent-7.jpg" alt="">
+                    </div>
+                    <div class="menu">
+                        <h3>
+                            Raghavendra Deeduvanu
+                            <div>
+                            raghavendra@gmail.com
+                            </div>
+                        </h3>
+                        <ul>
+                            <li>
+                                <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                <a href="#">My Profile</a>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-list"></i></span>
+                                <a href="#">My Enrollments</a>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-sign-out-alt"></i></span>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function menuToggle(){
+                const toggleMenu = document.querySelector('.menus');
+                toggleMenu.classList.toggle('active')
+            }
+        </script>
+    </nav>
+    <section>
+        <div class="container mx-auto">
+            <div class="flex flex-wrap xl:m-12 lg:m-12 md:m-12 m-6">
+                <div class="xl:w-3/4 lg:w-3/4 w-full xl:px-4 lg:px-4 md:px-4">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="self-center text-white">
+                            <h1 class="text-2xl font-semibold">Data Science</h1>
+                        </div>
+                        <div class="text-center xl:my-0 lg:my-6 md:my-6 my-4">
+                            <button class="p-2 border-2 bg-primary rounded-lg focus:outline-none font-semibold">View Curriculum<button>
+                        </div>
+                    </div>
+                    <div class="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4 mt-3">
+                        <a href="#">
+                            <div class="bg-white border-t-4 border-blue-500 relative p-4 h-full rounded-2xl">
+                                <p class="text-lg">Progress : 80%</p>
+                                <div class="mt-20 text-2xl font-bold">Python</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="bg-white border-t-4 border-pink-500 relative p-4 h-full rounded-2xl">
+                                <p class="text-lg">Progress : 80%</p>
+                                <div class="mt-20 text-2xl font-bold">Statistics</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="bg-white border-t-4 border-indigo-500 relative p-4 h-full rounded-2xl">
+                                <p class="text-lg">Progress : 80%</p>
+                                <div class="mt-20 text-2xl font-bold">SQL</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="bg-white border-t-4 border-green-500 relative p-4 h-full rounded-2xl">
+                                <p class="text-lg">Progress : 80%</p>
+                                <div class="mt-20 text-2xl font-bold">EDA</div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="bg-white border-4 relative justify-around p-4 h-full rounded-2xl">
+                                <p class="text-lg text-gray-500"><i class="far fa-clock mr-2"></i>Starts on: 14 June 2021</p>
+                                <div class="mt-20 text-2xl text-gray-500 font-bold">Machine Learning</div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="bg-white border-4 relative justify-around p-4 h-full rounded-2xl">
+                                <p class="text-lg text-gray-500"><i class="far fa-clock mr-2"></i>Starts on: 14 June 2021</p>
+                                <div class="mt-20 text-2xl text-gray-500 font-bold">Deep Learning</div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="bg-white border-4 relative justify-around p-4 h-full rounded-2xl">
+                                <p class="text-lg text-gray-500"><i class="fas fa-lock mr-2"></i></p>
+                                <div class="mt-20 text-2xl text-gray-500 font-bold">Capstone Project</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 lg:w-1/4 w-full xl:px-4 lg:px-4 md:px-4">
+                    <p class="text-white text-2xl font-semibold xl:mt-0 lg:mt-0 md:mt-6">Upcoming Dates</p>
+                    <div class="bg-white mt-3 border-t-4 border-yellow-500 relative p-4 h-auto rounded-2xl">
+                        <div class="flex border border-black flex-wrap rounded-md border justify-between p-2 shadow-md mb-3 text-lg">
+                            <p>Python Quiz-1</p>
+                            <p>25 May 2021</p>
+                        </div>
+                        <div class="flex border border-tertiary flex-wrap rounded-md border justify-between p-2 shadow-md mb-3 text-lg">
+                            <p>Mentorship-1</p>
+                            <p>26 May 2021</p>
+                        </div>
+                        <div class="flex border border-tertiary flex-wrap rounded-md border justify-between p-2 shadow-md mb-3 text-lg">
+                            <p>Python Quiz-2</p>
+                            <p>27 May 2021</p>
+                        </div>
+                        <div class="flex border border-tertiary flex-wrap rounded-md border justify-between p-2 shadow-md text-lg">
+                            <p>Mentorship-2</p>
+                            <p>28 May 2021</p>
+                        </div>
+                    </div>
+                    <p class="text-white text-2xl font-semibold mt-6">LeaderBoard</p>
+                    <div class="bg-white mt-3 border-t-4 border-yellow-600 relative p-4 h-auto rounded-2xl">
+                        <div class="flex justify-between p-2 border-b-2 mb-3 text-lg">
+                            <p>Rank</p>
+                            <p>Name</p>
+                            <p>Points</p>
+                        </div>
+                        <div class="flex justify-between p-2 text-lg border-b-2 mb-3">
+                            <p>1</p>
+                            <p>Raghav</p>
+                            <p>250</p>
+                        </div>
+                        <div class="flex justify-between p-2 text-lg border-b-2 mb-3">
+                            <p>2</p>
+                            <p>Bhavana</p>
+                            <p>246</p>
+                        </div>
+                        <div class="flex justify-between p-2 text-lg">
+                            <p>3</p>
+                            <p>RaviTeja</p>
+                            <p>243</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
