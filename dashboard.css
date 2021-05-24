@@ -21,7 +21,7 @@
 .action .profile{
     border-radius: 50%;
     cursor: pointer;
-    height: 60px;
+    height: 40px;
     overflow: hidden;
     position: relative;
 }
@@ -91,7 +91,7 @@
 .action .menu ul li:hover a{
     color:#036580;
 }
-@media (min-width: 360px) and (max-width: 760px) {
+@media (min-width: 320px) and (max-width: 760px) {
     .logo-width{
      width: 150px;
     }

@@ -19,7 +19,7 @@
     padding: 10px 20px;
     position: absolute;
     right: 20px;
-    width: 250px;
+    width: 300px;
     transition: 0.5s;
     top: 120px;
     visibility: hidden;
@@ -61,11 +61,8 @@
 .actions .menus ul li a{
     display: inline-block;
     color: #555;
-    font-size: 14px;
-    font-weight: 600;
     padding-left: 15px;
     text-decoration: none;
-    text-transform: uppercase;
     transition: 0.5s;
 }
 .actions .menus ul li:hover i{
@@ -73,4 +70,7 @@
 }
 .actions .menus ul li:hover a{
     color:#036580;
+}
+.actions img{
+    height: 100%;
 }
